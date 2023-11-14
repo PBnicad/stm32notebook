@@ -1,31 +1,25 @@
-name: VitePress Deployment
+name: Deploy
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
         with:
-          node-version: "14"
+          node-version: 16
+      - run: npm i pnpm -g
+      - run: pnpm install --frozen-lockfile
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Build
+        run: pnpm docs:build
 
-      - name: Build VitePress
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
