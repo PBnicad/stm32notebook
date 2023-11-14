@@ -5,7 +5,7 @@ export default defineConfig({
   lang: "zh-CN",
   title: "STM32学习笔记",
   description: "STM32学习笔记",
-  base: "/stm32notebook/",
+  //base: "/stm32notebook/",
 
   themeConfig: {
     nav: [
