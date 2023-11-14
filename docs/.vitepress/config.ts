@@ -28,6 +28,7 @@ export default defineConfig({
         // text: 'Guide',
         items: [
           { text: "STM32 最小系统构成", link: "/stm32最小系统" },
+          { text: "存储器与寄存器", link: "/存储器与寄存器" },
           // ...
         ],
       },
