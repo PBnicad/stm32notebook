@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+
+# Vite
+/dist/
+/.vite/
+
+# Output of 'npm run build'
+/.vitepress/dist/
+
+# Cache files and logs
+/.cache/
+/logs/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
