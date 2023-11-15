@@ -29,6 +29,7 @@ export default defineConfig({
         items: [
           { text: "STM32 最小系统构成", link: "/stm32最小系统" },
           { text: "存储器与寄存器", link: "/存储器与寄存器" },
+          { text: "使用寄存器点亮第一个LED", link: "/使用寄存器点亮第一个LED" },
           // ...
         ],
       },

@@ -4,7 +4,7 @@ layout: home
 title: STM32NOTEBOOK
 hero:
   name: STM32笔记
-  text: STM32F1
+  text: STM32F103
   tagline: 使用的开发板为普中科技玄武F103
   actions:
     - theme: brand
